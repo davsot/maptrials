@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <head>
+<head>
 <meta charset='utf-8' />
     <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
@@ -86,24 +86,9 @@ var map = new mapboxgl.Map({
   style: 'mapbox://styles/davsot/ciu980tyu000a2io9qplhkp7j'
 });
 
-map.on('load', function() {
-var layers = ['0-10', '10-20', '20-50', '50-100', '100-200', '200-500', '500-1000', '1000+'];
-layers.forEach(function(layer) {
-  var color = map.getPaintProperty(layer, 'fill-color');
-  var item = document.createElement('div');
-  var key = document.createElement('span');
-  key.className = 'legend-key';
-  key.style.backgroundColor = color;
-
-  var value = document.createElement('span');
-  value.innerHTML = layer;
-  item.appendChild(key);
-  item.appendChild(value);
-  legend.appendChild(item);
-});
-});
-
 </script>
 
 </body>
+</html>
+
 </html>
