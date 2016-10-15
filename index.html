@@ -104,7 +104,7 @@ map.on('load', function() {
         legend.appendChild(item);
     });
 
-     // change info window on hover
+    // change info window on hover
     map.on('mousemove', function (e) {
         var states = map.queryRenderedFeatures(e.point, {
             layers: layers
@@ -116,8 +116,6 @@ map.on('load', function() {
             document.getElementById('pd').innerHTML = '<p>Hover over a state!</p>';
         }
     });
-
-});
 
 });
 
